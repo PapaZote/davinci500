@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Inscribirse | Leonardo da Vinci</title>
+	<link rel="stylesheet" href="styles/style.css">
+	<link rel="icon" href="imag/logo.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script src="elem/main.js"></script>
+
+	 <script src="elem/header.js"></script>
+
+	 <div class="wrapper" id="top">
+        <div class="space"></div>
+	 	<section class="form_wrap">
+
+        <form action="enviar.php" method="post" class="form_contact">
+            <div class="user_info">
+                <label class="label" for="names">Nombres*</label>
+                <input type="text" id="names" name="nombre" required>
+
+                <label class="label" for="email">Correo electronico*</label>
+                <input type="text" id="email" name="correo" required>
+
+                <label class="label" for="phone">Telefono / Celular</label>
+                <input type="text" id="phone" name="telefono">
+
+                <label class="label" for="mensaje">¿A qué taller te gustaría entrar?*</label>
+                <div class="space-min"></div>
+                    <div class="opciones">
+
+                        <div class="arte">
+                            <input type="radio" id="gastronomia" name="act" value="gastronomia">
+                            <span class="checkmark"></span>
+                            <label for="gastronomia">Gastronomía</label>
+                        </div>
+
+                        <div class="botanica">
+                            <input type="radio" id="botanica" name="act" value="botanica">
+                            <span class="checkmark"></span>
+                            <label for="Botanica">Botánica</label>
+                        </div>
+
+                        <div class="astronomia">
+                            <input type="radio" id="astronomia" name="act" value="astronomia">
+                            <span class="checkmark"></span>
+                            <label for="astronomia">Astronomía</label>
+                        </div>
+
+                        <div class="arte">
+                            <input type="radio" id="arte" name="act" value="arte">
+                            <span class="checkmark"></span>
+                            <label for="arte">Arte</label>
+                        </div>
+                    </div>
+
+                    <div class="space-min"></div>
+
+                <label class="label" for="mensaje">¿Tienes alguna duda?*</label>
+                <textarea id="mensaje" name="mensaje"></textarea>
+
+                <input type="submit" value="Enviar" id="btnSend">
+                <!--a href="mensaje-de-envio.html" class="btnSend">Enviar</a-->
+            </div>
+        </form>
+        <div style="clear:both;"></div>
+    </section>
+    <div class="space-max"></div>
+	 </div>
+
+	 <script src="elem/footer.js"></script>
+
+</body>
+</html>
